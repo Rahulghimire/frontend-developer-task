@@ -101,10 +101,9 @@ input:focus {
   color: #007fff !important;
   font-weight: 700 !important;
   text-decoration: underline !important;
-}
-
-a {
-  text-decoration: none !important;
+  text-decoration-skip-ink: none !important;
+  text-decoration-thickness: 2px !important;
+  padding-bottom: 8px;
 }
 
 /* hero section continues */
@@ -132,6 +131,71 @@ a {
 .carousel-control-prev,
 .carousel-control-next {
   width: 9% !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* about section starts here */
+.about-container {
+  margin: 12.2rem 8.6rem;
+}
+
+.image-container {
+  padding-right: 9rem;
+}
+
+.about {
+  font-family: "Nunito";
+}
+
+.about_text {
+  font-weight: bolder;
+  color: #17224d;
+  font-size: 4.5rem;
+}
+
+.about_para-container {
+  padding: 1.5rem 0 5rem 0;
+}
+.about_para {
+  font-size: 2.2rem;
+  text-align: justify;
+  font-weight: 400;
+  font-family: "Nunito";
+  color: #515151;
+}
+
+.about_button {
+  background-color: #007fff;
+  border: none;
+  border-radius: 2.5rem;
+  color: white;
+  padding: 1rem;
+  max-width: 16rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.checkmark-container {
+  margin-bottom: 5rem;
+}
+
+.checkmark_text {
+  font-size: 1.8rem;
+  font-family: "Nunito";
+  font-weight: 500;
+  color: #515151;
+}
+
+/* services section starts here */
+
+.services {
+  font-family: "Nunito";
+}
+.services_header {
+  
 }
 
 @media (max-width: 1200px) {
