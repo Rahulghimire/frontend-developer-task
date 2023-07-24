@@ -130,7 +130,7 @@ input:focus {
 }
 .carousel-control-prev,
 .carousel-control-next {
-  width: 9% !important;
+  width: 15% !important;
 }
 
 a {
@@ -151,7 +151,7 @@ a {
 }
 
 .about_text {
-  font-weight: bolder;
+  font-weight: 800;
   color: #17224d;
   font-size: 4.5rem;
 }
@@ -193,9 +193,61 @@ a {
 
 .services {
   font-family: "Nunito";
+  padding: 0 8rem;
 }
 .services_header {
-  
+  font-weight: 800;
+  color: #17224d;
+  font-size: 4.5rem;
+  text-align: center;
+  margin-bottom: 0.6rem;
+}
+
+.services_para {
+  color: #515151;
+  font-weight: 500;
+  font-size: 2.2rem;
+  text-align: justify;
+}
+
+.services-card {
+  margin: 6.4rem 0 12.2rem 0;
+  gap: 3.577rem;
+}
+
+.card {
+  border-radius: 1.2rem !important;
+}
+
+.card_body {
+  padding: 2.094rem 2.178rem 0 2.178rem !important;
+}
+
+.card_title {
+  font-family: "Nunito" !important;
+  font-size: 2rem !important;
+  color: #17224d !important;
+  font-weight: 800 !important;
+  margin-bottom: 0.8rem;
+}
+
+.card_text {
+  font-family: "Nunito";
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+
+.btn-viewmore {
+  font-size: 1.2rem;
+  font-family: "Inter";
+  font-weight: 600;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+  background-color: #17224d;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 2.178rem;
 }
 
 @media (max-width: 1200px) {

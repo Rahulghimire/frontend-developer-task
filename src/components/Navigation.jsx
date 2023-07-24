@@ -18,10 +18,16 @@ const Navigation = () => {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll" className="justify-content-center">
           <Nav
+            exact="true"
             className="mx-3 mx-md-0 py-3 py-md-0 me-auto my-2 my-lg-0"
             navbarScroll
           >
-            <NavLink exact to="/" className="nav-item" activeClassName="active">
+            <NavLink
+              exact="true"
+              to="/"
+              className="nav-item"
+              activeClassName="active"
+            >
               Home
             </NavLink>
             <NavLink to="/about" className="nav-item" activeClassName="active">
