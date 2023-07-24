@@ -1,14 +1,13 @@
-import './App.css'
-import TopBar from './components/TopBar'
-import Navbar from './components/Navbar'
+import "./App.css";
+import TopBar from "./components/TopBar";
+import Navigation from "./components/Navigation";
 function App() {
-
   return (
     <>
-    <TopBar/>
-    <Navbar/>
+      <TopBar />
+      <Navigation />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

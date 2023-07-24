@@ -1,23 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Nunito:wght@400;500;600;700;800;900&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Nunito:wght@400;500;600;700;800;900&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 10px;
 }
 
-body{
-  font-family: 'Inter','Nunito', sans-serif;
-}
-.topbar{
-  background-color: #007FFF;
+body {
+  font-family: "Inter", "Nunito", sans-serif;
 }
 
-.topbar_text{
-  font-family: 'Inter';
+.topbar {
+  background-color: #007fff;
+}
+
+.topbar_text {
+  font-family: "Inter";
   font-weight: 700;
   color: white;
   text-align: center;
   font-size: 1.6rem;
   padding: 1.9rem;
+}
+
+.navbar {
+  padding: 2.1rem 0 3.1rem 0 !important;
+  height: 100%;
+}
+
+.navbar_logo {
+  padding-right: 5.5rem !important;
+}
+
+.nav-item {
+  font-family: "Inter";
+  font-weight: 500 !important;
+  font-size: 1.5rem !important;
+  padding: 0 3.7rem 0 0 !important;
+  color: #17224d !important;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input::placeholder {
+  font-size: 1.2rem;
+  font-family: "Inter";
+  color: #0a1a58;
+  font-weight: 400;
+}
+
+.search-input {
+  width: 100vw;
+  max-width: 29rem;
+}
+.search::after {
+  content: "";
+  background-color: #007fff;
+  background-image: url("./assets/search.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+input:focus {
+  border-color: #007fff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.6);
+}
+.cart {
+  border: 1px solid #007fff;
+  padding: 1.6rem 1.716rem;
+  border-radius: 0.8rem;
+}
+
+.cart-item {
+  font-family: "Nunito";
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.rounded-pill {
+  border: 1px solid #007fff !important;
+}
+
+@media (min-width: 1024px) {
+  .cart {
+    padding: 1rem;
+  }
+  .cart-item {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1540px) {
+  .cart {
+    padding: 1.6rem 1.716rem;
+  }
+
+  .cart-item {
+    font-size: 1.6rem;
+  }
 }
