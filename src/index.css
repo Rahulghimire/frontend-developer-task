@@ -197,7 +197,8 @@ a {
   margin-bottom: 13.521rem;
 }
 .services_header,
-.breeds_header {
+.breeds_header,
+.blogs_header {
   font-weight: 800;
   color: #17224d;
   font-size: 4.5rem;
@@ -300,7 +301,58 @@ a {
   border-radius: 25px;
   background-color: #007fff;
   padding: 0.95rem 0.9rem 0.95rem 2.7rem;
-  margin-bottom: 2.178rem;
+}
+
+/* promotion section starts here */
+
+/* .promotion-container {
+  padding: 12.2rem 1.1rem;
+} */
+
+.promotion-container {
+  background-image: url("./assets/promotion-image.png");
+  margin: 12.2rem 1.1rem;
+  background-size: cover;
+  max-height: 32.8rem;
+  background-position: center;
+}
+
+/* blogs section starts here */
+.blogs {
+  padding: 0 9.1rem 12.2rem 9.1rem;
+}
+.blogs-card {
+  gap: 3.5rem;
+  width: 100%;
+}
+
+.blogs_header {
+  margin: 0;
+  padding-bottom: 6.4rem;
+}
+.blog_image {
+  padding-bottom: 1.6rem;
+  border-radius: 1.6rem;
+}
+
+.blog_card {
+  border: none !important;
+}
+
+.blog_card_title {
+  font-family: "Inter";
+  color: #000000;
+  font-size: 1.8rem;
+  font-weight: 800;
+  padding-bottom: 0.8rem;
+}
+
+.blog_card_text {
+  font-family: "Inter";
+  color: #666666;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding-bottom: 2.4rem;
 }
 
 @media (max-width: 1200px) {

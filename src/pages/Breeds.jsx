@@ -143,7 +143,7 @@ const Breeds = () => {
           </Card.Body>
         </Card>
       </div>
-      <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center pb-0">
         <button type="button" className="view-all-btn">
           View All <img src={btnArrow} alt="btnarrow" className="ps-5" />
         </button>
