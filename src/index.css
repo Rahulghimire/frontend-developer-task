@@ -12,6 +12,7 @@ body {
 
 .topbar {
   background-color: #007fff;
+  width: 100vw;
 }
 
 .topbar_text {
@@ -56,6 +57,7 @@ body {
   width: 100vw;
   max-width: 29rem;
 }
+
 .search::after {
   content: "";
   background-color: #007fff;
@@ -78,9 +80,10 @@ input:focus {
   outline: none;
   box-shadow: 0 0 4px rgba(0, 123, 255, 0.6);
 }
+
 .cart {
   border: 1px solid #007fff;
-  padding: 1.6rem 1.716rem;
+  padding: 0.8rem;
   border-radius: 0.8rem;
 }
 
@@ -94,21 +97,69 @@ input:focus {
   border: 1px solid #007fff !important;
 }
 
-@media (min-width: 1024px) {
-  .cart {
-    padding: 1rem;
+.active {
+  color: #007fff !important;
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* hero section continues */
+
+.banner {
+  max-height: 50rem;
+}
+
+.banner_text-one {
+  font-weight: 800;
+  color: #17224d;
+  font-size: 4rem;
+  font-family: "Nunito";
+}
+
+.banner_text-two {
+  color: #231f20;
+  font-size: 2.6rem;
+  font-family: "Nunito";
+  font-weight: 500;
+}
+.carousel-caption {
+  top: 3.6rem !important;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 9% !important;
+}
+
+@media (max-width: 1200px) {
+  .nav-item {
+    font-size: 1.2rem !important;
+    padding: 0 2.5rem 0 0 !important;
   }
-  .cart-item {
-    font-size: 1.6rem;
+
+  .search-input {
+    max-width: 20rem;
+  }
+  .cart {
+    border: 1px solid #007fff;
+    padding: 1.6rem 1.716rem;
+    border-radius: 0.8rem;
   }
 }
 
-@media (min-width: 1540px) {
-  .cart {
-    padding: 1.6rem 1.716rem;
+@media (max-width: 2560px) {
+  .navbar {
+    padding: 2.5rem 0 3.5rem 0 !important;
   }
-
-  .cart-item {
-    font-size: 1.6rem;
+  .nav-item {
+    padding: 0 3.7rem 0 0 !important;
+  }
+  .cart {
+    border: 1px solid #007fff;
+    padding: 1.6rem 1.716rem;
+    border-radius: 0.8rem;
   }
 }

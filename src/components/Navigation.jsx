@@ -3,43 +3,52 @@ import "../index.css";
 import logo from "../assets/logo.svg";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
 import cart from "../assets/cart.svg";
-import search from "../assets/search.svg";
+import { NavLink } from "react-router-dom";
 import favourites from "../assets/favourites.svg";
 
 const Navigation = () => {
   return (
-    <Navbar expand="lg" className="navbar d-flex align-items-center">
+    <Navbar expand="lg" className="navbar d-flex align-items-center mb-xl-8">
       <Container>
         <Navbar.Brand href="/" className="navbar_logo">
           <img src={logo} alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll" className="justify-content-center">
-          <Nav className="me-auto my-2 my-lg-0" navbarScroll>
-            <Nav.Link href="/home" className="nav-item">
+          <Nav
+            className="mx-3 mx-md-0 py-3 py-md-0 me-auto my-2 my-lg-0"
+            navbarScroll
+          >
+            <NavLink exact to="/" className="nav-item" activeClassName="active">
               Home
-            </Nav.Link>
-            <Nav.Link href="/about" className="nav-item">
+            </NavLink>
+            <NavLink to="/about" className="nav-item" activeClassName="active">
               About
-            </Nav.Link>
-            <Nav.Link href="/services" className="nav-item">
+            </NavLink>
+            <NavLink
+              to="/services"
+              className="nav-item"
+              activeClassName="active"
+            >
               Services
-            </Nav.Link>
-            <Nav.Link href="/breeds" className="nav-item">
+            </NavLink>
+            <NavLink to="/breeds" className="nav-item" activeClassName="active">
               Breeds
-            </Nav.Link>
-            <Nav.Link href="/shop" className="nav-item">
+            </NavLink>
+            <NavLink to="/shop" className="nav-item" activeClassName="active">
               Shop
-            </Nav.Link>
-            <Nav.Link href="/gallery" className="nav-item">
+            </NavLink>
+            <NavLink
+              to="/gallery"
+              className="nav-item"
+              activeClassName="active"
+            >
               Gallery
-            </Nav.Link>
+            </NavLink>
           </Nav>
-          <form className="search-form gap-4">
+          <form className="search-form gap-1 gap-md-4  navbarScroll">
             <div className="position-relative search">
               <input
                 type="search"
@@ -48,14 +57,17 @@ const Navigation = () => {
                 aria-label="Search"
               />
             </div>
-
-            <div className="fav-logo">
+            <div className="fav-logo me-md-3">
               <img src={favourites} alt="favourites-logo" />
             </div>
-            <Nav.Link href="#" className="mx-3 align-items-center d-flex">
+            <Nav.Link
+              href="#"
+              className="mx-2 mx-md-3 align-items-center d-flex"
+            >
               <div className="d-flex flex-row align-items-center justify-content-center cart">
                 <img src={cart} alt="cart" />
-                <div className="cart-item ps-3">2 item</div>
+                <div className="cart-item ps-1 ps-md-3">2</div>
+                <div className="cart-item ps-1 ps-md-1">item</div>
               </div>
             </Nav.Link>
           </form>
