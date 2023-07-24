@@ -60,17 +60,21 @@ const Footer = () => {
               <img src={galleryImg} alt="gallery-image" className="img-fluid" />
             </div>
           </div>
-          <hr className="text-white" />
+          <hr className="text-white py-2" />
         </div>
         <div className="row">
-          <div className="col-12 col-md-6 d-flex align-items-center">
+          <div className="col-12 col-md-6 d-flex align-items-center py-2">
             <p className="copyright-text ">
               Copyright © 2023 City Pet House & Animal Clinic | All Rights
               Reserved
             </p>
           </div>
-          <div className="col-12 col-md-6 d-flex justify-content-end media-links-container">
-            <img src={links} alt="media-links" className="img-fluid media-links" />
+          <div className="col-12 col-md-6 d-flex justify-content-end media-links-container py-2">
+            <img
+              src={links}
+              alt="media-links"
+              className="img-fluid media-links"
+            />
           </div>
         </div>
       </div>
