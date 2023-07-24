@@ -5,6 +5,8 @@ import Services from "./Services";
 import Breeds from "./Breeds";
 import Promotion from "../components/Promotion";
 import Blog from "../components/Blog";
+import Footer from "../components/Footer";
+
 const Homepage = () => {
   return (
     <>
@@ -14,6 +16,7 @@ const Homepage = () => {
       <Breeds />
       <Promotion />
       <Blog />
+      <Footer />
     </>
   );
 };
