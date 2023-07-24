@@ -12,7 +12,7 @@ import img5 from "../assets/image-5.png";
 const Services = () => {
   return (
     <div className="services">
-      <div className="">
+      <div>
         <p className="services_header">Our Services</p>
         <span className="services_para">
           We provide a wide range of products & services for pets such as food,
